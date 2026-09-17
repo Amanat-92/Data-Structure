@@ -1,28 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class student
-{
-public:
-
-string Name;
-int Rollno;
-float Marks;
-
-void display()
-{
-cout<<"Name of student is : "<<Name<<endl;
-cout<<"Roll no of student is :"<<Rollno<<endl;
-cout<<"Marks of student is :"<<Marks<<endl;
-}
-};
-
 int main()
 {
-student S1;
-S1.Name = "Prajval";
-S1.Rollno = 22;
-S1.Marks = 205;
-
-S1.display();
-return 0;
+ int rollNo[5];
+ cout << "Enter Roll Numbers of 5 students:\n";
+ for (int i = 0; i < 5; i++)
+ {
+ cin >> rollNo[i];
+ }
+ cout << "\nStudent Roll Numbers:\n";
+ for (int i = 0; i < 5; i++)
+ {
+ cout << rollNo[i] << endl;
+ }
+ return 0;
 }
